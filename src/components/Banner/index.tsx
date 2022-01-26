@@ -21,8 +21,8 @@ export function Banner() {
                 align="flex-start"
               >
                 <Box mb="4">
-                  <Heading>5 Continents</Heading>
-                  <Heading>infinitas possibilidades.</Heading>
+                  <Heading fontWeight="medium">5 Continentes</Heading>
+                  <Heading fontWeight="medium">infinitas possibilidades.</Heading>
                 </Box>
                 
                 <Text fontSize="lg" >
