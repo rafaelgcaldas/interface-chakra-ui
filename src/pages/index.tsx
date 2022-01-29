@@ -1,7 +1,11 @@
-import { Box, Divider, Heading } from '@chakra-ui/react'
+import { Box, Divider, Heading, Image } from '@chakra-ui/react'
+import { Swiper, SwiperSlide } from 'swiper/react';
+
 import { Banner } from '../components/Banner'
 import { Header } from '../components/Header'
 import { TravelTypes } from '../components/TravelTypes'
+
+import { Carousel } from '../components/Carousel';
 
 
 export default function Home() {
@@ -23,6 +27,10 @@ export default function Home() {
           <Heading fontWeight="medium">Vamos nessa?</Heading>
           <Heading fontWeight="medium">Então escolha seu continente</Heading>
         </Box>
+      </Box>
+
+      <Box maxWidth="1160px" mx="auto" mb="16">
+        <Carousel />
       </Box>
     </>
   )
