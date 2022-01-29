@@ -41,6 +41,174 @@
           "image": ""
         }
       ]
+    },
+    {
+      "id": 2,
+      "name": "América",
+      "title": "O novo mundo",
+      "content": "O Continente Americano é uma porção de terras banhadas pelo Oceano Atlântico a leste e pelo Oceano Pacífico a oeste. Trata-se de dois blocos continentais ao norte e ao sul unidos por um istmo (pequena faixa de terras situadas entre dois mares).",
+      "image": "europe2.jpg",
+      "slug": "americano",
+      "languages": 8,
+      "countries": 35,
+      "cities": [
+        {
+          "id": 1,
+          "name": "Washington",
+          "country": "Estados Unidos",
+          "image": ""
+        },
+        {
+          "id": 2,
+          "name": "Brasília",
+          "country": "Brasil",
+          "image": ""
+        },
+        {
+          "id": 2,
+          "name": "Buenos Aires",
+          "country": "Argentina",
+          "image": ""
+        },
+        {
+          "id": 2,
+          "name": "Assunção",
+          "country": "Paraguai",
+          "image": ""
+        },
+        {
+          "id": 2,
+          "name": "Montividéo",
+          "country": "Uruguai",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Ásia",
+      "title": "A terra do sol nascente",
+      "content": "A Ásia é o maior dos continentes, tanto em área como em população. Abrange um terço das partes sólidas da superfície da Terra e é responsável por abrigar quase três quintos da população mundial.",
+      "image": "europe2.jpg",
+      "slug": "asia",
+      "languages": 2301,
+      "countries": 50,
+      "cities": [
+        {
+          "id": 1,
+          "name": "Tókio",
+          "country": "Japão",
+          "image": ""
+        },
+        {
+          "id": 2,
+          "name": "China",
+          "country": "Pequim",
+          "image": ""
+        },
+        {
+          "id": 2,
+          "name": "Seoul",
+          "country": "Coréia do Sul",
+          "image": ""
+        },
+        {
+          "id": 2,
+          "name": "Nova Delhi",
+          "country": "Índia",
+          "image": ""
+        },
+        {
+          "id": 2,
+          "name": "Bangkok",
+          "country": "Tailândia",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Africa",
+      "title": "O berço da humanidade",
+      "content": "A África é o terceiro continente mais extenso (depois da Ásia e da América) com cerca de 30 milhões de quilômetros quadrados, cobrindo 20,3% da área total da terra firme do planeta. É o segundo continente mais populoso da Terra (atrás da Ásia) com cerca de um bilhão de pessoas (estimativa para 2005[1]), representando cerca de um sétimo da população mundial, e 54 países independentes.",
+      "image": "europe2.jpg",
+      "slug": "africa",
+      "languages": 2000,
+      "countries": 54,
+      "cities": [
+        {
+          "id": 1,
+          "name": "Cidade do Cabo",
+          "country": "África do Sul",
+          "image": ""
+        },
+        {
+          "id": 2,
+          "name": "Luanda",
+          "country": "Angola",
+          "image": ""
+        },
+        {
+          "id": 2,
+          "name": "Maputo",
+          "country": "Moçambique",
+          "image": ""
+        },
+        {
+          "id": 2,
+          "name": "Harare",
+          "country": "Zimbábue",
+          "image": ""
+        },
+        {
+          "id": 2,
+          "name": "Rabat",
+          "country": "Marrocos",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Oceania",
+      "title": "O berço da humanidade",
+      "content": "Oceania ou Oceânia é uma região geográfica composta por vários grupos de ilhas do oceano Pacífico (Polinésia, Melanésia e Micronésia). O termo Oceania foi criado em 1831 pelo explorador francês Dumont d'Urville. O termo é usado hoje em vários idiomas para designar uma região geográfica e política que compreende o continente da Austrália e ilhas do Oceano Pacífico adjacentes.",
+      "image": "europe2.jpg",
+      "slug": "oceania",
+      "languages": 1250,
+      "countries": 14,
+      "cities": [
+        {
+          "id": 1,
+          "name": "Wellington",
+          "country": "Nova Zelândia",
+          "image": ""
+        },
+        {
+          "id": 2,
+          "name": "Camberra",
+          "country": "Austrália",
+          "image": ""
+        },
+        {
+          "id": 2,
+          "name": "Suva",
+          "country": "Fiji",
+          "image": ""
+        },
+        {
+          "id": 2,
+          "name": "Nucualofa",
+          "country": "Tonga",
+          "image": ""
+        },
+        {
+          "id": 2,
+          "name": "Apia",
+          "country": "Samoa",
+          "image": ""
+        }
+      ]
     }
   ]
 }
