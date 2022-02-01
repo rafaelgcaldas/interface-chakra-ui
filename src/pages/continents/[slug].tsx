@@ -1,4 +1,4 @@
-import { Box, Flex, Grid, GridItem, Text, VStack } from "@chakra-ui/react";
+import { Box, Flex, Grid, GridItem, Heading, HStack, Image, SimpleGrid, Text, VStack } from "@chakra-ui/react";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { Header } from "../../components/Header";
 import { Info } from "../../components/Info";
@@ -38,10 +38,12 @@ export default function Continent({ continent }: ContinentProps) {
         backgroundRepeat="no-repeat"
         height="500px"
         width="100%"
+        maxWidth="1440px"
+        mx="auto"
       />
 
       <Box width="1160px" mx="auto">
-        <Grid templateColumns='repeat(2, 1fr)' mt="5rem">
+        <Grid templateColumns='repeat(2, 1fr)' my="5rem">
           <GridItem colSpan={1}>
             <Text textAlign="justify">
               {continent.content}
@@ -55,6 +57,42 @@ export default function Continent({ continent }: ContinentProps) {
             </Grid>
           </GridItem>
         </Grid>
+
+        <Box>
+          <Heading mb="2.5rem" fontWeight="medium"> Cidades +100</Heading>
+
+          <SimpleGrid minChildWidth="250px">
+            {continent.cities.map(city => (
+              <Box 
+                borderWidth='1px' 
+                maxWidth="250px" 
+                height='280px'
+                borderRadius='4px' 
+                overflow='hidden'
+                borderColor="yellow.900"
+                bg="white"
+                mb="3rem"
+              >
+                <Image src={city.image} alt={city.name} width="100%" height="173px" objectFit="cover" />
+                <Box p="4">
+                  <Box>
+                    <Heading fontSize='lg' fontWeight="semibold">{city.name}</Heading>
+                    <HStack>
+                      <Text>{city.country}</Text>
+                      <Image 
+                        src={city.image} 
+                        alt={city.name} 
+                        width="30px" 
+                        height="30px" 
+                        borderRadius="50%"
+                      />
+                    </HStack>
+                  </Box>
+                </Box>
+              </Box>
+            ))}
+          </SimpleGrid>
+        </Box>
       </Box>
 
     </>
