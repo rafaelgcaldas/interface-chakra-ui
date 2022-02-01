@@ -1,6 +1,7 @@
 import { Box, Flex, Grid, GridItem, Text, VStack } from "@chakra-ui/react";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { Header } from "../../components/Header";
+import { Info } from "../../components/Info";
 import { api } from "../../services/api";
 
 interface Continent {
@@ -48,26 +49,9 @@ export default function Continent({ continent }: ContinentProps) {
           </GridItem>
           <GridItem >
             <Grid px="4rem" py="2rem" templateColumns='repeat(3, 1fr)' gap="2.5rem" colSpan={1}>
-              <GridItem colSpan={1}>
-                <VStack>
-                  <Text>{continent.countries}</Text>
-                  <Text>países</Text>
-                </VStack>
-              </GridItem>
-              
-              <GridItem colSpan={1}>
-                <VStack>
-                  <Text>{continent.languages}</Text>
-                  <Text>línguas</Text>
-                </VStack>
-              </GridItem>
-              
-              <GridItem colSpan={1}>
-                <VStack>
-                  <Text>{continent.cities.length}</Text>
-                  <Text>cidades +100</Text>
-                </VStack>
-              </GridItem>
+              <Info count={continent.countries} text="países" />
+              <Info count={continent.languages} text="línguas" />
+              <Info count={continent.cities.length} text="cidades +100" />
             </Grid>
           </GridItem>
         </Grid>
