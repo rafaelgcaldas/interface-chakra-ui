@@ -1,5 +1,7 @@
 import { Box, Flex, Grid, GridItem, Text, VStack } from "@chakra-ui/react";
+import { GetStaticPaths, GetStaticProps } from "next";
 import { Header } from "../../components/Header";
+import { api } from "../../services/api";
 
 interface Continent {
   id: number;
@@ -24,13 +26,13 @@ interface ContinentProps {
   continent: Continent;
 }
 
-export default function Continent({ continent}: ContinentProps) {
+export default function Continent({ continent }: ContinentProps) {
   return (
     <>
       <Header />
 
       <Box
-        backgroundImage="url('/images/europe.png')"
+        backgroundImage={`url(${continent.image})`}
         backgroundPosition="center"
         backgroundRepeat="no-repeat"
         height="500px"
@@ -41,31 +43,28 @@ export default function Continent({ continent}: ContinentProps) {
         <Grid templateColumns='repeat(2, 1fr)' mt="5rem">
           <GridItem colSpan={1}>
             <Text textAlign="justify">
-              A Europa é, por convenção, um dos seis continentes do mundo. 
-              Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se 
-              da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, 
-              o Cáucaso, e o mar Negro a sudeste
+              {continent.content}
             </Text>
           </GridItem>
           <GridItem >
             <Grid px="4rem" py="2rem" templateColumns='repeat(3, 1fr)' gap="2.5rem" colSpan={1}>
               <GridItem colSpan={1}>
                 <VStack>
-                  <Text>50</Text>
+                  <Text>{continent.countries}</Text>
                   <Text>países</Text>
                 </VStack>
               </GridItem>
               
               <GridItem colSpan={1}>
                 <VStack>
-                  <Text>60</Text>
+                  <Text>{continent.languages}</Text>
                   <Text>línguas</Text>
                 </VStack>
               </GridItem>
               
               <GridItem colSpan={1}>
                 <VStack>
-                  <Text>27</Text>
+                  <Text>{continent.cities.length}</Text>
                   <Text>cidades +100</Text>
                 </VStack>
               </GridItem>
@@ -76,4 +75,49 @@ export default function Continent({ continent}: ContinentProps) {
 
     </>
   )
+}
+
+export const getStaticPaths: GetStaticPaths = async (ctx) => {
+  const response = await api.get(`continents`);
+  const continents = response.data;
+
+  const paths = continents.map(continent => {
+    return {
+      params: { slug: continent.slug}
+    }
+  })
+
+  console.log("params: ", paths);
+
+  return {
+    paths,
+    fallback: false
+  }
+}
+
+export const getStaticProps: GetStaticProps = async (ctx) => {
+  try {
+    const { slug } = ctx.params;
+
+    const { data } = await api.get(`continents?slug=${slug}`);
+
+    if (!data) {
+      return { notFound: true };
+    }
+
+    const continent = data[0];
+
+    console.log("continent: ", continent);
+
+    return { 
+      props: {
+        continent
+      }
+    }
+
+  } catch (error) {
+    // console.log("errooooor: ", error);
+
+    return { notFound: true };
+  }
 }
