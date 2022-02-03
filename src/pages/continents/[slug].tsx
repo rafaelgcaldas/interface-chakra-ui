@@ -41,16 +41,24 @@ export default function Continent({ continent }: ContinentProps) {
         width="100%"
         maxWidth="1440px"
         mx="auto"
-        display="flex"
-        alignItems={["center", "flex-end", "flex-end"]}
-        justifyContent={["center", "inherit", "inherit"]}
       >
-        <Heading 
-          fontSize="3rem"
-          color="white"
-          ml={["0", "2rem", "8.75rem"]}
-          mb="3.5rem"
-        >Europa</Heading>
+        <Box
+          maxWidth="1160px"
+          height="100%"
+          mx="auto"
+          display="flex"
+          alignItems={["center", "flex-end", "flex-end"]}
+          justifyContent={["center", "inherit", "inherit"]}
+          >
+          <Heading 
+            fontSize="3rem"
+            color="white"
+            ml="4"
+            pb="3rem"
+          >
+            {continent.name}
+          </Heading>
+        </Box>
       </Box>
 
       <Box maxWidth="1160px" mx="auto">
