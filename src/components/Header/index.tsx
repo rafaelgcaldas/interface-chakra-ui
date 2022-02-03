@@ -7,6 +7,8 @@ export function Header() {
         justify="center" 
         height="100px"
         bg="white"
+        maxWidth="1440px" 
+        mx="auto"
       >
         <Image src='/images/logo.svg' alt='World Trip' />
       </Flex>
