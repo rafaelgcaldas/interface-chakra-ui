@@ -21,6 +21,7 @@ interface City {
   name: string;
   country: string;
   image: string;
+  countryFlag: string;
 }
 
 interface ContinentProps {
@@ -40,17 +41,35 @@ export default function Continent({ continent }: ContinentProps) {
         width="100%"
         maxWidth="1440px"
         mx="auto"
-      />
+        display="flex"
+        alignItems={["center", "flex-end", "flex-end"]}
+        justifyContent={["center", "inherit", "inherit"]}
+      >
+        <Heading 
+          fontSize="3rem"
+          color="white"
+          ml={["0", "2rem", "8.75rem"]}
+          mb="3.5rem"
+        >Europa</Heading>
+      </Box>
 
-      <Box width="1160px" mx="auto">
-        <Grid templateColumns='repeat(2, 1fr)' my="5rem">
+      <Box maxWidth="1160px" mx="auto">
+        <Grid 
+          templateColumns={['repeat(1fr)', 'repeat(1fr)', 'repeat(2, 1fr)']} 
+          my="5rem"
+        >
           <GridItem colSpan={1}>
-            <Text textAlign="justify">
+            <Text textAlign="justify" p="4">
               {continent.content}
             </Text>
           </GridItem>
           <GridItem >
-            <Grid px="4rem" py="2rem" templateColumns='repeat(3, 1fr)' gap="2.5rem" colSpan={1}>
+            <Grid 
+              templateColumns='repeat(3, 1fr)' 
+              gap="1.5rem" 
+              colSpan={1} 
+              mx={["1rem", "2rem", "2rem"]}
+            >
               <Info count={continent.countries} text="países" />
               <Info count={continent.languages} text="línguas" />
               <Info count={continent.cities.length} text="cidades +100" />
@@ -59,28 +78,55 @@ export default function Continent({ continent }: ContinentProps) {
         </Grid>
 
         <Box>
-          <Heading mb="2.5rem" fontWeight="medium"> Cidades +100</Heading>
+          <Heading 
+            mx="4" 
+            mb="2.5rem" 
+            fontWeight="medium"
+          >
+            Cidades +100
+          </Heading>
 
-          <SimpleGrid minChildWidth="250px">
+          <SimpleGrid 
+            minChildWidth='250px' 
+            spacing='40px' 
+            align='center' 
+            px="4"
+          >
             {continent.cities.map(city => (
               <Box 
-                borderWidth='1px' 
-                maxWidth="250px" 
-                height='280px'
+                maxWidth={["100%", "100%","250px"]} 
                 borderRadius='4px' 
                 overflow='hidden'
-                borderColor="yellow.900"
                 bg="white"
                 mb="3rem"
               >
-                <Image src={city.image} alt={city.name} width="100%" height="173px" objectFit="cover" />
-                <Box p="4">
+                <Image 
+                  src={city.image} 
+                  alt={city.name} 
+                  width="100%" 
+                  height="173px" 
+                  objectFit="cover" 
+                />
+                <Box 
+                  p="6" 
+                  borderWidth='1px' 
+                  borderTop="0"
+                  borderColor="yellow.900"
+                  height="107px"
+                >
                   <Box>
-                    <Heading fontSize='lg' fontWeight="semibold">{city.name}</Heading>
-                    <HStack>
+                    <Heading 
+                      fontSize='lg' 
+                      mb="0.75rem" 
+                      fontWeight="semibold"
+                    >
+                      {city.name}
+                    </Heading>
+
+                    <HStack justify="space-between">
                       <Text>{city.country}</Text>
                       <Image 
-                        src={city.image} 
+                        src={city.countryFlag} 
                         alt={city.name} 
                         width="30px" 
                         height="30px" 

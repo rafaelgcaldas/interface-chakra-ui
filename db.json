@@ -14,31 +14,36 @@
           "id": 1,
           "name": "Londres",
           "country": "Reino Unido",
-          "image": "https://inglaterrabrasil.com.br/files/2013/11/conhe%C3%A7a-londres-635x359.jpg"
+          "image": "https://inglaterrabrasil.com.br/files/2013/11/conhe%C3%A7a-londres-635x359.jpg",
+          "countryFlag": "/images/countries/reino-unido.png"
         },
         {
           "id": 2,
           "name": "Paris",
           "country": "França",
-          "image": "https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-paris-capa2019-02.jpg"
+          "image": "https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-paris-capa2019-02.jpg",
+          "countryFlag": "/images/countries/franca.png"
         },
         {
           "id": 3,
           "name": "Roma",
           "country": "Itália",
-          "image": "https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-roma-capa2019-01-820x430.jpg"
+          "image": "https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-roma-capa2019-01-820x430.jpg",
+          "countryFlag": "/images/countries/italia.png"
         },
         {
           "id": 4,
           "name": "Praga",
           "country": "República Tcheca",
-          "image": "https://cdn2.civitatis.com/republica-checa/praga/guia/praga.jpg"
+          "image": "https://cdn2.civitatis.com/republica-checa/praga/guia/praga.jpg",
+          "countryFlag": "/images/countries/rep-tcheca.png"
         },
         {
           "id": 5,
           "name": "Amsterdã",
           "country": "Holanda",
-          "image": "https://www.conexaoamsterdam.com.br/wp-content/uploads/2016/03/anoitecer-em-amsterdam.jpg"
+          "image": "https://www.conexaoamsterdam.com.br/wp-content/uploads/2016/03/anoitecer-em-amsterdam.jpg",
+          "countryFlag": "/images/countries/holanda.png"
         }
       ]
     },
