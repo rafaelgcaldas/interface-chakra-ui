@@ -13,23 +13,20 @@ import "swiper/css/pagination";
 SwiperCore.use([Autoplay, Navigation, Pagination]);
 
 
-export function Carousel() {
-  const continents = [
-    {
-      id: 1,
-      image: '/images/background.png',
-      name: 'Europe',
-      description: 'O continente mais antigo',
-      url: 'europe'
-    },
-    {
-      id: 2,
-      image: '/images/background.png',
-      name: 'Americano',
-      description: 'Teste',
-      url: 'american'
-    },
-  ]
+interface Continent {
+  id: number;
+  name: string;
+  title: string;
+  image: string;
+  slug: string;
+}
+
+interface CarouselProps {
+  continents: Continent[];
+}
+
+export function Carousel({ continents }: CarouselProps) {
+  
   return (
     <Flex
       maxW="1240px"
@@ -54,7 +51,7 @@ export function Carousel() {
               bgImage={continent.image}
               bgSize="cover"
             >
-              <Link href={`/continents/${continent.url}`}>
+              <Link href={`/continents/${continent.slug}`}>
                 <LinkChakra textAlign="center">
                   <Heading
                     fontWeight="bold"
@@ -69,7 +66,7 @@ export function Carousel() {
                     color="gray.200"
                     mt="4"
                   >
-                    {continent.description}
+                    {continent.title}
                   </Heading>
                 </LinkChakra>
               </Link>

@@ -6,9 +6,24 @@ import { Header } from '../components/Header'
 import { TravelTypes } from '../components/TravelTypes'
 
 import { Carousel } from '../components/Carousel';
+import { GetServerSideProps } from 'next';
+import { api } from '../services/api';
+import Continent from './continents/[slug]';
 
 
-export default function Home() {
+interface Continent {
+  id: number;
+  name: string;
+  title: string;
+  image: string;
+  slug: string;
+}
+
+interface HomeProps {
+  continents: Continent[]
+}
+
+export default function Home({ continents }: HomeProps) {
   return (
     <>
       <Header />
@@ -30,8 +45,30 @@ export default function Home() {
       </Box>
 
       <Box maxWidth="1160px" mx="auto" mb="16">
-        <Carousel />
+        <Carousel continents={continents} />
       </Box>
     </>
   )
+}
+
+export const getServerSideProps: GetServerSideProps = async (ctx) => {
+  const response = await api.get(`continents`);
+
+  const continents = response.data.map(continent => {
+    return {
+      id: continent.id,
+      name: continent.name,
+      title: continent.title,
+      image: continent.image,
+      slug: continent.slug
+    }
+  })
+
+  console.log("continents: ", continents);
+
+  return {
+    props: {
+      continents
+    }
+  }
 }

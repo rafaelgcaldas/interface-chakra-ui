@@ -107,6 +107,7 @@ export default function Continent({ continent }: ContinentProps) {
                 overflow='hidden'
                 bg="white"
                 mb="3rem"
+                key={city.id}
               >
                 <Image 
                   src={city.image} 
@@ -122,7 +123,7 @@ export default function Continent({ continent }: ContinentProps) {
                   borderColor="yellow.900"
                   height="107px"
                 >
-                  <Box>
+                  <Box textAlign="left">
                     <Heading 
                       fontSize='lg' 
                       mb="0.75rem" 
