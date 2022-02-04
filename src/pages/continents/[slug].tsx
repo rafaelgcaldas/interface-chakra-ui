@@ -31,7 +31,7 @@ interface ContinentProps {
 export default function Continent({ continent }: ContinentProps) {
   return (
     <>
-      <Header />
+      <Header showArrowLeft={true} />
 
       <Box
         backgroundImage={`url(${continent.image})`}
