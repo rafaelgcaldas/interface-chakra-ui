@@ -34,7 +34,7 @@ export default function Home({ continents }: HomeProps) {
         <Divider 
           borderColor="gray.400" 
           width="90px"
-          mb="3.25rem" 
+          mb={["2rem", "3.25rem"]} 
           mx="auto"
         />
 

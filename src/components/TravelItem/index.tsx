@@ -8,8 +8,11 @@ interface TravelItemProps {
 export function TravelItem({img, label}: TravelItemProps) {
   return (
     <VStack>
-      <Image src={img} />
-      <Text fontSize="2xl" fontWeight="semibold">
+      <Image
+        src={img}
+        height={["65px", "auto"]}
+      />
+      <Text fontSize={["lg", "lg", "2xl"]} fontWeight={["medium", "medium", "semibold"]}>
         {label}
       </Text>
     </VStack>
