@@ -14,46 +14,46 @@
           "id": 1,
           "name": "Londres",
           "country": "Reino Unido",
-          "image": "https://inglaterrabrasil.com.br/files/2013/11/conhe%C3%A7a-londres-635x359.jpg",
-          "countryFlag": "/images/countries/reino-unido.png"
+          "image": "/images/cities/londres.png",
+          "countryFlag": "https://flagcdn.com/gb.svg"
         },
         {
           "id": 2,
           "name": "Paris",
           "country": "França",
-          "image": "https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-paris-capa2019-02.jpg",
-          "countryFlag": "/images/countries/franca.png"
+          "image": "/images/cities/paris.png",
+          "countryFlag": "https://flagcdn.com/fr.svg"
         },
         {
           "id": 3,
           "name": "Roma",
           "country": "Itália",
-          "image": "https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-roma-capa2019-01-820x430.jpg",
-          "countryFlag": "/images/countries/italia.png"
+          "image": "/images/cities/roma.png",
+          "countryFlag": "https://flagcdn.com/it.svg"
         },
         {
           "id": 4,
           "name": "Praga",
           "country": "República Tcheca",
-          "image": "https://cdn2.civitatis.com/republica-checa/praga/guia/praga.jpg",
-          "countryFlag": "/images/countries/rep-tcheca.png"
+          "image": "/images/cities/praga.png",
+          "countryFlag": "https://flagcdn.com/cz.svg"
         },
         {
           "id": 5,
           "name": "Amsterdã",
           "country": "Holanda",
-          "image": "https://www.conexaoamsterdam.com.br/wp-content/uploads/2016/03/anoitecer-em-amsterdam.jpg",
-          "countryFlag": "/images/countries/holanda.png"
+          "image": "/images/cities/amsterda.png",
+          "countryFlag": "https://flagcdn.com/nl.svg"
         }
       ]
     },
     {
       "id": 2,
-      "name": "América",
+      "name": "América do Norte",
       "title": "O novo mundo",
       "content": "O Continente Americano é uma porção de terras banhadas pelo Oceano Atlântico a leste e pelo Oceano Pacífico a oeste. Trata-se de dois blocos continentais ao norte e ao sul unidos por um istmo (pequena faixa de terras situadas entre dois mares).",
-      "image": "/images/continents/america.jpg",
-      "slug": "americano",
+      "image": "/images/continents/america-do-norte.jpg",
+      "slug": "america-do-norte",
       "languages": 8,
       "countries": 35,
       "cities": [
@@ -61,36 +61,88 @@
           "id": 1,
           "name": "Washington",
           "country": "Estados Unidos",
-          "image": "https://www.flytap.com/-/media/Flytap/new-tap-pages/destinations/north-america/united-states/washington/destinations-washington-banner-mobile-1024x553.jpg"
+          "image": "https://www.flytap.com/-/media/Flytap/new-tap-pages/destinations/north-america/united-states/washington/destinations-washington-banner-mobile-1024x553.jpg",
+          "countryFlag": "https://flagcdn.com/us.svg"
         },
         {
           "id": 2,
-          "name": "Brasília",
-          "country": "Brasil",
-          "image": "https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-brasilia-capa2019-01-820x430.jpg"
+          "name": "Ottawa",
+          "country": "Canadá",
+          "image": "https://cdn.pixabay.com/photo/2015/06/19/22/58/ottawa-815375__340.jpg",
+          "countryFlag": "https://flagcdn.com/ca.svg"
         },
         {
           "id": 3,
-          "name": "Buenos Aires",
-          "country": "Argentina",
-          "image": "https://www.daninoce.com.br/wp-content/uploads/2018/01/o-que-voce-precisa-saber-antes-de-ir-a-buenos-aires-dani-noce-imagem-destaque-960x625.jpg"
+          "name": "Cidade do México",
+          "country": "México",
+          "image": "https://www.melhoresdestinos.com.br/wp-content/uploads/2021/05/cidade-do-mexico-capa-820x430.jpg",
+          "countryFlag": "https://flagcdn.com/mx.svg"
         },
         {
           "id": 4,
-          "name": "Assunção",
-          "country": "Paraguai",
-          "image": "https://www.submarinoviagens.com.br/media/17650442/assuncao-palacio-governo-465637628.jpg"
+          "name": "Nova York",
+          "country": "Estados Unidos",
+          "image": "https://ci-prod.imgix.net/upload/galeriadeimagens/00205891.jpg",
+          "countryFlag": "https://flagcdn.com/us.svg"
         },
         {
           "id": 5,
-          "name": "Montividéo",
-          "country": "Uruguai",
-          "image": "https://www.uruguayxxi.gub.uy/uploads/noticia/952f91902cc9b992ce3ccd500260e14a12270bd0.jpg"
+          "name": "Vancouver",
+          "country": "Canada",
+          "image": "https://mundoviajar.com.br/wp-content/uploads/2018/11/Vancouver4.jpg",
+          "countryFlag": "https://flagcdn.com/ca.svg"
         }
       ]
     },
     {
       "id": 3,
+      "name": "América do Sul",
+      "title": "O coração da América",
+      "content": "Com uma extensão de cerca de 17,8 milhões de km², a América do Sul comporta 6% da população mundial dividida em 12 países e 7 territórios. São eles a Argentina, Bolívia, Brasil, Chile, Colômbia, Equador, Guiana, Paraguai, Peru, Suriname, Uruguai e Venezuela e, os territórios da Guiana Francesa, Ilha de Páscoa, Ilhas Galápagos, Ilhas Geórgia e Sandwich e Ilhas Malvinas. Limita-se ao norte com a América Central, à leste com o oceano atlântico e à oeste com o oceano pacífico.",
+      "image": "/images/continents/america-do-sul.jpg",
+      "slug": "america-do-sul",
+      "languages": 9,
+      "countries": 12,
+      "cities": [
+        {
+          "id": 1,
+          "name": "Brasília",
+          "country": "Brasil",
+          "image": "https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-brasilia-capa2019-01-820x430.jpg",
+          "countryFlag": "https://flagcdn.com/br.svg"
+        },
+        {
+          "id": 2,
+          "name": "Cali",
+          "country": "Colombia",
+          "image": "https://content.r9cdn.net/rimg/dimg/99/0e/467f0ecb-city-11092-17b1b440ae7.jpg?crop=true&width=1366&height=768&xhint=1372&yhint=1100",
+          "countryFlag": "https://flagcdn.com/co.svg"
+        },
+        {
+          "id": 3,
+          "name": "Buenos Aires",
+          "country": "Argentina",
+          "image": "https://www.daninoce.com.br/wp-content/uploads/2018/01/o-que-voce-precisa-saber-antes-de-ir-a-buenos-aires-dani-noce-imagem-destaque-960x625.jpg",
+          "countryFlag": "https://flagcdn.com/ar.svg"
+        },
+        {
+          "id": 4,
+          "name": "Assunção",
+          "country": "Paraguai",
+          "image": "https://www.submarinoviagens.com.br/media/17650442/assuncao-palacio-governo-465637628.jpg",
+          "countryFlag": "https://flagcdn.com/py.svg"
+        },
+        {
+          "id": 5,
+          "name": "Montividéo",
+          "country": "Uruguai",
+          "image": "https://www.uruguayxxi.gub.uy/uploads/noticia/952f91902cc9b992ce3ccd500260e14a12270bd0.jpg",
+          "countryFlag": "https://flagcdn.com/uy.svg"
+        }
+      ]
+    },
+    {
+      "id": 4,
       "name": "Ásia",
       "title": "A terra do sol nascente",
       "content": "A Ásia é o maior dos continentes, tanto em área como em população. Abrange um terço das partes sólidas da superfície da Terra e é responsável por abrigar quase três quintos da população mundial.",
@@ -103,36 +155,41 @@
           "id": 1,
           "name": "Tókio",
           "country": "Japão",
-          "image": ""
+          "image": "https://coisasdojapao.com/wp-content/uploads/2020/02/tokyo-cidades-instagramaveisjpg_opt.jpg",
+          "countryFlag": "https://flagcdn.com/jp.svg"
         },
         {
           "id": 2,
           "name": "China",
           "country": "Pequim",
-          "image": ""
+          "image": "https://www.melhoresdestinos.com.br/wp-content/uploads/2018/01/rua-qianmen-pequim-china-e1515286964915.jpg",
+          "countryFlag": "https://flagcdn.com/cn.svg"
         },
         {
           "id": 3,
           "name": "Seoul",
           "country": "Coréia do Sul",
-          "image": ""
+          "image": "https://www.webuildvalue.com/wp-content/uploads/seoul-megacity-crescita-sostenibile.jpg",
+          "countryFlag": "https://flagcdn.com/kr.svg"
         },
         {
           "id": 4,
           "name": "Nova Delhi",
           "country": "Índia",
-          "image": ""
+          "image": "https://www.viajali.com.br/wp-content/uploads/2018/07/nova-deli-1-730x449.jpg",
+          "countryFlag": "https://flagcdn.com/in.svg"
         },
         {
           "id": 5,
           "name": "Bangkok",
           "country": "Tailândia",
-          "image": ""
+          "image": "https://turistaprofissional.com/wp-content/uploads/2017/11/grand-palace-bangkok.jpg",
+          "countryFlag": "https://flagcdn.com/th.svg"
         }
       ]
     },
     {
-      "id": 4,
+      "id": 5,
       "name": "Africa",
       "title": "O berço da humanidade",
       "content": "A África é o terceiro continente mais extenso (depois da Ásia e da América) com cerca de 30 milhões de quilômetros quadrados, cobrindo 20,3% da área total da terra firme do planeta. É o segundo continente mais populoso da Terra (atrás da Ásia) com cerca de um bilhão de pessoas (estimativa para 2005[1]), representando cerca de um sétimo da população mundial, e 54 países independentes.",
@@ -145,36 +202,41 @@
           "id": 1,
           "name": "Cidade do Cabo",
           "country": "África do Sul",
-          "image": ""
+          "image": "https://www.submarinoviagens.com.br/media/15886091/cidade-do-cabo-o-que-fazer.jpg",
+          "countryFlag": "https://flagcdn.com/za.svg"
         },
         {
           "id": 2,
           "name": "Luanda",
           "country": "Angola",
-          "image": ""
+          "image": "https://content.r9cdn.net/rimg/dimg/ec/9d/01dfcc84-city-9951-172c0bb1d2b.jpg?width=1750&height=1000&xhint=1953&yhint=905&crop=true",
+          "countryFlag": "https://flagcdn.com/ao.svg"
         },
         {
           "id": 3,
           "name": "Maputo",
           "country": "Moçambique",
-          "image": ""
+          "image": "https://content.r9cdn.net/rimg/dimg/ff/13/d4c83e1f-city-6408-172ff86b903.jpg?width=1750&height=1000&xhint=2583&yhint=1849&crop=true",
+          "countryFlag": "https://flagcdn.com/mz.svg"
         },
         {
           "id": 4,
           "name": "Harare",
           "country": "Zimbábue",
-          "image": ""
+          "image": "https://i.pinimg.com/736x/f1/d4/02/f1d402568604b2f905cdfea10215c6a8.jpg",
+          "countryFlag": "https://flagcdn.com/zw.svg"
         },
         {
           "id": 5,
           "name": "Rabat",
           "country": "Marrocos",
-          "image": ""
+          "image": "https://3.bp.blogspot.com/-rqnjvPbzatU/Uyxm2XMMBFI/AAAAAAAA-uU/6qE3qM68q_A/s1600/Rabat-Museu-da-arte-comtemporanea.jpg",
+          "countryFlag": "https://flagcdn.com/ma.svg"
         }
       ]
     },
     {
-      "id": 5,
+      "id": 6,
       "name": "Oceania",
       "title": "O berço da humanidade",
       "content": "Oceania ou Oceânia é uma região geográfica composta por vários grupos de ilhas do oceano Pacífico (Polinésia, Melanésia e Micronésia). O termo Oceania foi criado em 1831 pelo explorador francês Dumont d'Urville. O termo é usado hoje em vários idiomas para designar uma região geográfica e política que compreende o continente da Austrália e ilhas do Oceano Pacífico adjacentes.",
@@ -187,31 +249,36 @@
           "id": 1,
           "name": "Wellington",
           "country": "Nova Zelândia",
-          "image": ""
+          "image": "https://novazelandiabrasil.com.br/files/2012/11/L164_MASTER-635x427.jpg",
+          "countryFlag": "https://flagcdn.com/nz.svg"
         },
         {
           "id": 2,
           "name": "Camberra",
           "country": "Austrália",
-          "image": ""
+          "image": "https://i0.wp.com/braustralia.com/wp-content/uploads/2017/08/camberra-capital-da-australia.jpg?fit=700%2C458&ssl=1",
+          "countryFlag": "https://flagcdn.com/au.svg"
         },
         {
           "id": 3,
           "name": "Suva",
           "country": "Fiji",
-          "image": ""
+          "image": "https://thumbs.dreamstime.com/z/suva-fiji-catedral-sagrado-do-cora%C3%A7%C3%A3o-de-arquidiocese-igreja-roman-catholic-baixa-vibrante-oceania-134465372.jpg",
+          "countryFlag": "https://flagcdn.com/fj.svg"
         },
         {
           "id": 4,
           "name": "Nucualofa",
           "country": "Tonga",
-          "image": ""
+          "image": "https://media-cdn.tripadvisor.com/media/photo-s/01/0e/98/4f/ship-wreck-from-pangaimotu.jpg",
+          "countryFlag": "https://flagcdn.com/to.svg"
         },
         {
           "id": 5,
           "name": "Apia",
           "country": "Samoa",
-          "image": ""
+          "image": "https://wikiimg.tojsiabtv.com/wikipedia/commons/thumb/2/27/WS-Apia-Immac-concept.jpg/1200px-WS-Apia-Immac-concept.jpg",
+          "countryFlag": "https://flagcdn.com/ws.svg"
         }
       ]
     }
