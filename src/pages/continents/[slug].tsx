@@ -81,7 +81,7 @@ export default function Continent({ continent }: ContinentProps) {
             >
               <Info count={continent.countries} text="países" />
               <Info count={continent.languages} text="línguas" />
-              <Info count={continent.cities.length} text="cidades +100" />
+              <Info count={continent.cities.length} text="cidades +100" hasIcon={true} />
             </Grid>
           </GridItem>
         </Grid>

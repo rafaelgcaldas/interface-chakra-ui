@@ -12,7 +12,7 @@ export function Header({ showArrowLeft = false }: HeaderProps) {
     <Flex 
       align="center" 
       justify="center" 
-      height="100px"
+      height={["50px", "100px"]}
       bg="white"
       maxWidth="1440px" 
       mx="auto"
@@ -30,7 +30,9 @@ export function Header({ showArrowLeft = false }: HeaderProps) {
       )}
       <Link href="/" passHref>
         <ChakraLink>
-          <Image src='/images/logo.svg' alt='World Trip' />
+          <Image 
+            width={["81px", "185px"]}
+            src='/images/logo.svg' alt='World Trip' />
         </ChakraLink>
       </Link>
     </Flex>

@@ -6,7 +6,7 @@ export function Banner() {
         backgroundImage="url('/images/background.png')"
         backgroundPosition="center"
         backgroundRepeat="no-repeat"
-        height={["163px", "335px","335px"]}
+        height={["auto", "auto","335px"]}
         width="100%"
       >
         <Box
