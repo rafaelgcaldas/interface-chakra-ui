@@ -1,0 +1,18 @@
+.swiper {
+  .swiper-button-prev {
+    color: #FFBA08;
+  }
+
+  .swiper-button-next {
+    color: #FFBA08;
+  }
+
+  .swiper-pagination-bullet {
+    background: #999999 !important;
+    opacity: 1;
+
+    &.swiper-pagination-bullet-active {
+      background: #FFBA08 !important;
+    }
+  }
+}

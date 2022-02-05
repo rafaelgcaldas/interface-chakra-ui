@@ -37,6 +37,7 @@ export default function Continent({ continent }: ContinentProps) {
         backgroundImage={`url(${continent.image})`}
         backgroundPosition="center"
         backgroundRepeat="no-repeat"
+        backgroundSize="cover"
         height="500px"
         width="100%"
         maxWidth="1440px"
