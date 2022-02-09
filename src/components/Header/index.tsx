@@ -24,7 +24,9 @@ export function Header({ showArrowLeft = false }: HeaderProps) {
           left={['8px', '8px', '80px']}
         >
           <Link href="/" passHref>
-            <Icon fontSize="3rem" cursor="pointer" as={RiArrowDropLeftLine} />
+            <Box>
+              <Icon fontSize="3rem" cursor="pointer" as={RiArrowDropLeftLine} />
+            </Box>
           </Link>
         </Box>
       )}

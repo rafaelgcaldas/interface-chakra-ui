@@ -1,8 +1,19 @@
-import { Box, Flex, Grid, GridItem, Heading, HStack, Image, SimpleGrid, Text, VStack } from "@chakra-ui/react";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { Header } from "../../components/Header";
 import { Info } from "../../components/Info";
 import { api } from "../../services/api";
+import { 
+  Box,
+  Flex,
+  Grid,
+  GridItem,
+  Heading,
+  HStack,
+  Image,
+  SimpleGrid,
+  Text,
+  
+} from "@chakra-ui/react";
 
 interface Continent {
   id: number;

@@ -1,4 +1,21 @@
-import { GridItem, VStack, Text, Flex, Box, Icon } from "@chakra-ui/react";
+import { 
+  GridItem,
+  VStack,
+  Text,
+  Flex,
+  Box,
+  Icon,
+  Popover,
+  PopoverTrigger,
+  PopoverContent,
+  PopoverHeader,
+  PopoverBody,
+  PopoverFooter,
+  PopoverArrow,
+  PopoverCloseButton,
+  PopoverAnchor,
+  Link,
+} from "@chakra-ui/react";
 import { RiInformationLine } from "react-icons/ri";
 
 interface InfoProps {
@@ -18,17 +35,46 @@ export function Info({ count, text, hasIcon = false }: InfoProps) {
         >
           {count}
         </Text>
-        <Text
+        <Box
           mt="0"
           fontSize={["md", "lg", "xl"]}
           fontWeight="bold"
         >
           <Flex align="center">
             <Box>{text}</Box>
-            {!!hasIcon && <Icon fontSize="md" ml="4px" as={RiInformationLine} />}
+            {!!hasIcon && (
+              <Popover placement='left'>
+                <PopoverTrigger>
+                  <Box cursor="pointer">
+                    <Icon fontSize="md" ml="4px" as={RiInformationLine} />
+                  </Box>
+                </PopoverTrigger>
+                <PopoverContent>
+                  <PopoverArrow />
+                  <PopoverCloseButton />
+                  <PopoverHeader>Cidades +100</PopoverHeader>
+                  <PopoverBody>
+                    <Text fontSize="sm" fontWeight="medium">
+                      Cidades +100 é o número de cidades do continente que estão entre as 100 cidades mais visitadas do mundo.
+                    </Text> 
+                    <Link 
+                      href='https://www.visualcapitalist.com/the-100-most-popular-city-destinations/'
+                      isExternal
+                      color="blue.500"
+                    >
+                      Saiba mais
+                    </Link>
+                  </PopoverBody>
+                </PopoverContent>
+              </Popover>
+            )}
           </Flex>
-        </Text>
+        </Box>
       </VStack>
     </GridItem>
   )
 }
+
+/**
+ * 
+ */
